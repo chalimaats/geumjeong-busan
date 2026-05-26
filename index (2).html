@@ -682,10 +682,10 @@ async function init(){
   renderBoundary();
 
   const [edu,train,bus,rail]=await Promise.all([
-    tryFetch('./data/education_geumjeong.geojson',DATA.education),
-    tryFetch('./data/train_station_geumjeong.geojson',DATA.train),
-    tryFetch('./data/bus_station_geumjeong.geojson',DATA.bus),
-    tryFetch('./data/railway_geumjeong.geojson',DATA.railway),
+    tryFetch('data/education_geumjeong.geojson',DATA.education),
+    tryFetch('data/train_station_geumjeong.geojson',DATA.train),
+    tryFetch('data/bus_station_geumjeong.geojson',DATA.bus),
+    tryFetch('data/railway_geumjeong.geojson',DATA.railway),
   ]);
 
   // Render transport dulu agar TRAIN_POINTS & BUS_POINTS terisi
